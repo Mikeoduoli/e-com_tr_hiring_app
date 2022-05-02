@@ -19,20 +19,26 @@ public class ShopViewModel extends ViewModel {
     MutableLiveData<Product>mutableProduct = new MutableLiveData<>();
 
     public LiveData<List<Product>> getProducts(){ return shopRepo.getProducts(); }
+    //The method expects a return type of LiveData and
+    // we return ShopRepo because it is a type of LiveData
 
     public void setProduct(Product product){
+
         mutableProduct.setValue(product);
     }
 
     public LiveData<Product> getProduct(){
+
         return mutableProduct;
     }
 
     public LiveData<List<CartItem>> getCart() {
+
         return cartRepo.getCart();
     }
 
     public boolean addItemToCart(Product product){
+
         return cartRepo.addItemToCart(product);
     }
 
@@ -46,9 +52,11 @@ public class ShopViewModel extends ViewModel {
     }
 
     public LiveData<Double> getTotalPrice(){
+
         return cartRepo.getTotalPrice();
     }
     public void resetCart(){
+
         cartRepo.initCart();
     }
 }

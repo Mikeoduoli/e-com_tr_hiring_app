@@ -27,7 +27,7 @@ import com.google.android.material.snackbar.Snackbar;
 import java.util.List;
 
 public class ShopFragment extends Fragment implements ShopListAdapter.ShopInterface {
-
+    //Declaring variables
     private static final String TAG = "ShopFragment";
     FragmentShopBinding fragmentShopBinding;
     private ShopListAdapter shopListAdapter;
@@ -43,6 +43,7 @@ public class ShopFragment extends Fragment implements ShopListAdapter.ShopInterf
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        //Initializing the declared variable
         fragmentShopBinding = FragmentShopBinding.inflate(inflater, container, false);
         return fragmentShopBinding.getRoot();
     }
@@ -51,6 +52,8 @@ public class ShopFragment extends Fragment implements ShopListAdapter.ShopInterf
         super.onViewCreated(view, savedInstances);
 
         shopListAdapter = new ShopListAdapter(this);
+
+        //Use fragmentShopBinding to get the hold of RecyclerView that is inside this fragment
         fragmentShopBinding.shopRecyclerView.setAdapter(shopListAdapter);
 
         fragmentShopBinding.shopRecyclerView.addItemDecoration(new DividerItemDecoration(requireContext(),

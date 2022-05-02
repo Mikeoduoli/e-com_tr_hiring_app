@@ -18,12 +18,15 @@
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_login2.xml" value="0.19429347826086957" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_logout.xml" value="0.17617753623188406" />
+        <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_main.xml" value="0.1852355072463768" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_main2.xml" value="0.22" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_menu.xml" value="0.25" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_one_listview.xml" value="0.1911231884057971" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_payment.xml" value="0.17617753623188406" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/cart_action_item.xml" value="0.75" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/cart_row.xml" value="0.25" />
+        <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/content_main.xml" value="0.14945652173913043" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_first.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_login.xml" value="0.25" />
@@ -31,10 +34,11 @@
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_product_detail.xml" value="0.25348189415041783" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_second.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_shop.xml" value="0.25" />
+        <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_sign_out.xml" value="0.22" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/fragment_welcome_screen.xml" value="0.18425925925925926" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/layout/shop_row.xml" value="0.25" />
-        <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/menu/main_menu.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/menu/main_menu.xml" value="0.25" />
         <entry key="..\:/Users/Obed/AndroidStudioProjects/FarmApp/app/src/main/res/menu/menu_main.xml" value="0.20416666666666666" />
       </map>
     </option>

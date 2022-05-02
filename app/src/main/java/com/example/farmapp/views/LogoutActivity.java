@@ -1,14 +1,16 @@
-package com.example.farmapp;
+package com.example.farmapp.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AdministratorActivity extends AppCompatActivity {
+import com.example.farmapp.R;
+
+public class LogoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_administrator);
+        setContentView(R.layout.activity_logout);
     }
 }

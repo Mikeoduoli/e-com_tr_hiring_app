@@ -19,28 +19,28 @@
             android:exported="false"
             android:label="@string/title_activity_login2" />
         <activity
-            android:name=".EquipmentActivity"
+            android:name=".views.EquipmentActivity"
             android:exported="false" />
         <activity
-            android:name=".LogoutActivity"
+            android:name=".views.LogoutActivity"
             android:exported="false" />
         <activity
-            android:name=".PaymentActivity"
+            android:name=".views.PaymentActivity"
             android:exported="false" />
         <activity
             android:name=".CartActivity"
             android:exported="false" />
         <activity
-            android:name=".AdministratorActivity"
+            android:name=".views.AdministratorActivity"
             android:exported="false" />
         <activity
-            android:name=".AccountActivity"
+            android:name=".views.AccountActivity"
             android:exported="false" />
         <activity
             android:name=".views.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".views.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"

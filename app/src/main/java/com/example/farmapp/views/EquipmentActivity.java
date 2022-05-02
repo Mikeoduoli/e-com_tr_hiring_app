@@ -1,8 +1,10 @@
-package com.example.farmapp;
+package com.example.farmapp.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.farmapp.R;
 
 public class EquipmentActivity extends AppCompatActivity {
 

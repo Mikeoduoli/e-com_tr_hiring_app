@@ -4,13 +4,16 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.example.farmapp.models.Product;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 public class ShopRepo {
-
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("orders");
     private MutableLiveData<List<Product>> mutableProductList;
 
     public LiveData<List<Product>> getProducts(){

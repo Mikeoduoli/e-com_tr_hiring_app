@@ -48,6 +48,9 @@
         <action
             android:id="@+id/action_orderFragment_to_shopFragment"
             app:destination="@id/shopFragment" />
+        <action
+            android:id="@+id/action_orderFragment_to_signOutFragment"
+            app:destination="@id/signOutFragment" />
     </fragment>
     <fragment
         android:id="@+id/login"
@@ -57,6 +60,9 @@
         <action
             android:id="@+id/action_login_to_shopFragment"
             app:destination="@id/shopFragment" />
+        <action
+            android:id="@+id/action_login_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
@@ -66,6 +72,9 @@
         <action
             android:id="@+id/action_signUpFragment_to_shopFragment"
             app:destination="@id/shopFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_login"
+            app:destination="@id/login" />
     </fragment>
     <fragment
         android:id="@+id/welcomeScreen"
@@ -74,6 +83,18 @@
         tools:layout="@layout/fragment_welcome_screen" >
         <action
             android:id="@+id/action_welcomeScreen_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/signOutFragment"
+        android:name="com.example.farmapp.views.SignOutFragment"
+        android:label="fragment_sign_out"
+        tools:layout="@layout/fragment_sign_out" >
+        <action
+            android:id="@+id/action_signOutFragment_to_shopFragment"
+            app:destination="@id/shopFragment" />
+        <action
+            android:id="@+id/action_signOutFragment_to_login"
             app:destination="@id/login" />
     </fragment>
 </navigation>

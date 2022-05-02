@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -23,6 +24,8 @@ import java.util.List;
 
 public class MenuActivity extends AppCompatActivity {
 
+    private RecyclerView mainRecyclerView;
+
     private static final String TAG = "MenuActivity";
     NavController navController;
     ShopViewModel shopViewModel;
@@ -34,6 +37,7 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        mainRecyclerView=findViewById(R.id.container);
         navController = Navigation.findNavController(this,R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this,navController);
         shopViewModel = new ViewModelProvider(this).get(ShopViewModel.class);

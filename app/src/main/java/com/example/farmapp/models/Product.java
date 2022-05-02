@@ -11,15 +11,15 @@ import com.bumptech.glide.Glide;
 import java.util.Objects;
 
 public class Product {
+    //Fields used inthe application
     private String id;
     private String name;
     private double price;
     private boolean isAvailable;
     private String imageUrl;
 
+    //Creating a constructor
     Product(){
-
-
 
     }
 
@@ -30,6 +30,8 @@ public class Product {
         this.isAvailable = isAvailable;
         this.imageUrl = imageUrl;
     }
+
+    //Implementing getters and setters
 
     public String getId() {
         return id;
@@ -71,6 +73,9 @@ public class Product {
         this.imageUrl = imageUrl;
     }
 
+
+    //creating a toString method for this class
+
     @Override
     public String toString() {
         return "Product{" +
@@ -101,7 +106,8 @@ public class Product {
           return oldItem.equals(newItem);
       }
   };
-    @BindingAdapter("android:productImage")
+    @BindingAdapter("android:productImage")//Annotating BindingAdapter with a string name
+    // helps this method to be used in the XML file/
     public static void loadImage(ImageView imageView, String imageUrl) {
         Glide.with(imageView)
                 .load(imageUrl)
@@ -110,108 +116,4 @@ public class Product {
     }
 
 }
-
-//import android.widget.ImageView;
-//
-//import androidx.annotation.NonNull;
-//import androidx.databinding.BindingAdapter;
-//import androidx.recyclerview.widget.DiffUtil;
-//
-//import com.bumptech.glide.Glide;
-//
-//
-//public class Product {
-//    private final String id;
-//    private final String name;
-//    private final double price;
-//    private final boolean isAvailable;
-//    private final String imageUrl;
-//
-//    public Product(String id, String name, double price, boolean isAvailable, String imageUrl) {
-//        this.id = id;
-//        this.name = name;
-//        this.price = price;
-//        this.isAvailable = isAvailable;
-//        this.imageUrl = imageUrl;
-//    }
-//
-//    public String getId() {
-//        return this.id;
-//    }
-//
-//    public String setId() { return this.id; }
-//
-//    public String getName() {
-//        return this.name;
-//    }
-//
-//    public String setName() {
-//        return this.name;
-//    }
-//
-//    public double setPrice() {
-//        return this.price;
-//    }
-//
-//    public double getPrice() {
-//        return this.price;
-//    }
-//
-//    public boolean setIsAvailable() {
-//        return this.isAvailable;
-//    }
-//
-//    public boolean getIsAvailable() {
-//        return this.isAvailable;
-//    }
-//
-//    public String getImageUrl() {
-//        return this.imageUrl;
-//    }
-//
-//    public String setImageUrl() {
-//        return this.imageUrl;
-//    }
-//
-//    @Override
-//    public String toString() {
-//        return "Product{" +
-//                "id='" + id + '\'' +
-//                ", name='" + name + '\'' +
-//                ", price=" + price +
-//                ", isAvailable=" + isAvailable +
-//                ", imageUrl='" + imageUrl + '\'' +
-//                '}';
-//    }
-//
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Product product = (Product) o;
-//        return Double.compare(product.getPrice(), getPrice()) == 0 && getIsAvailable() == product.getIsAvailable() && getId().equals(product.getId()) && getName().equals(product.getName()) && getImageUrl().equals(product.getImageUrl());
-//    }
-//
-//
-//
-//    public static DiffUtil.ItemCallback<Product> itemCallback = new DiffUtil.ItemCallback<Product>() {
-//        @Override
-//        public boolean areItemsTheSame(@NonNull Product oldItem, @NonNull Product newItem) {
-//            return oldItem.getId().equals(newItem.getId());
-//        }
-//
-//        @Override
-//        public boolean areContentsTheSame(@NonNull Product oldItem, @NonNull Product newItem) {
-//            return oldItem.equals(newItem);
-//        }
-//    };
-//    @BindingAdapter("android:productImage")
-//    public static void loadImage(ImageView imageView, String imageUrl){
-//        Glide.with(imageView)
-//                .load(imageUrl)
-//                .fitCenter()
-//                .into(imageView);
-//    }
-//
-//}
 
